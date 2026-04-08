@@ -1,0 +1,6 @@
+# .gitignore
+*.zip
+*.heic
+*.jpg
+temp/
+.DS_Store
