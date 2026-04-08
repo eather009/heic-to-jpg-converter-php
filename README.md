@@ -2,6 +2,9 @@
 
 A lightweight, web-based PHP utility that allows users to upload multiple HEIC (High Efficiency Image Container) files, converts them to high-quality JPEGs, and packages them into a single ZIP archive for easy download.
 
+### URL
+Try from [https://heictojpg.eatherahmed.com/](https://heictojpg.eatherahmed.com/)
+
 ## Features
 - **Bulk Conversion:** Upload multiple files at once.
 - **Maximum Quality:** Specifically configured to bypass standard compression loss:
@@ -28,7 +31,7 @@ sudo apt install php-imagick libheif-examples
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/yourusername/heic-to-jpg-converter-php.git](https://github.com/yourusername/heic-to-jpg-converter-php.git)
+git clone [https://github.com/eather009/heic-to-jpg-converter-php.git](https://github.com/eather009/heic-to-jpg-converter-php.git)
 cd heic-to-jpg-converter-php
 ```
 
