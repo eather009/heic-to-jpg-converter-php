@@ -3,4 +3,10 @@
 *.heic
 *.jpg
 temp/
+storage/jobs/*
+!storage/jobs/.gitkeep
+storage/worker.heartbeat
+storage/worker.log
+storage/tmp/*
+!storage/tmp/.gitkeep
 .DS_Store

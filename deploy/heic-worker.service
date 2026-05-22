@@ -1,0 +1,19 @@
+[Unit]
+Description=HEIC to JPG background converter worker
+After=network.target php-fpm.service
+
+[Service]
+Type=simple
+User=apache
+Group=apache
+WorkingDirectory=/var/www/html/heic-converter
+ExecStart=/usr/bin/php worker.php
+Restart=always
+RestartSec=5
+Nice=10
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Environment=MAGICK_TMPDIR=/var/www/html/heic-converter/storage/tmp
+Environment=TMPDIR=/var/www/html/heic-converter/storage/tmp
+
+[Install]
+WantedBy=multi-user.target
